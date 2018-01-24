@@ -1,7 +1,7 @@
 # API Implementation of Distant School
 ## Scheme
 
-A list of entities who are first-citizen users:
+A list of entities which are first-citizen users:
 * Student
 * Teacher
 
