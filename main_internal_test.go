@@ -1,14 +1,18 @@
 package main
 
 import (
+	"fmt"
+	"reflect"
 	"testing"
 )
 
-func TestFact(t *testing.T) {
-	if Fact(1) != 1 {
-		t.Error("expected 1")
+func TestGetResponse(t *testing.T) {
+	val := reflect.ValueOf(GetResponse())
+	for i := 0; i < val.Type().NumField(); i++ {
+		fmt.Println(val.Type().Field(i).Tag.Get("json"))
 	}
-	if Fact(7) != 5040 {
-		t.Error("expected 5040")
+
+	if true {
+		t.Error("Something went wrong")
 	}
 }

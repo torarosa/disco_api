@@ -1,14 +1,42 @@
 package main
 
-import "fmt"
+type Entity struct {
+	Uid     string `json:"uid"`
+	Surname string `json:"surname"`
+	Name    string `json:"name"`
+	Email   string `json:"email"`
+}
 
-func Fact(n int) int {
-	if n != 0 {
-		return n * Fact(n-1)
+type Student struct {
+	Entity
+	Groups []string `json:"groups"`
+}
+
+type Info map[string]string
+type Roles map[string]string
+
+type Group struct {
+	Uid    string `json:"uid"`
+	Name   string `json:"name"`
+	Preset string `json:"preset"`
+	Roles  `json:"roles"`
+	Info   `json:"info"`
+}
+
+func init() {
+	student1 := Student{
+		Entity: Entity{
+			Uid:     "Aj8BSeViS68p",
+			Surname: "Jones",
+			Name:    "David-Robert",
+			Email:   "david@davidbowie.com",
+		},
+		Groups: []string{"xW1AkswBapQU"},
 	}
-	return 1
+
+	group1 := Group{}
 }
 
 func main() {
-	fmt.Println(Fact(7))
+
 }

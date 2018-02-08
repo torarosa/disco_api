@@ -1,0 +1,18 @@
+[
+  {
+    "xW1AkswBapQU": {
+      "name": "П-16-39б",
+      "preset": "casual",
+      "roles": {
+        "students": ["Aj8BSeViS68p", "Cqs42ZYk7gcf", "Aj8BSeViS68p"],
+        "teachers": ["X1iddKxJubQ0", "aC16yWR1cycu"],
+        "moderators": ["aC16yWR1cycu"],
+        "sys": "sys"
+      },
+      "info": {
+        "title": "Программисты",
+        "desciption": "..."
+      }
+    }
+  }
+]
